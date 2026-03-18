@@ -8,13 +8,19 @@ Date: March 12, 2026
 
 ============================================================
 
+As finals season approaches, caffeine and energy drinks are unfortunately are big part of my life giving me the extra push to study and complete my work during this stressful time. When trying to figure out a project idea, I took a sip of my RedBull when  I noticed a recurring pattern: I would drink an energy drink to boost my focus, but I couldn't quite predict when that boost would turn into a "crash" and I get tired again. I wanted to see exactly how much caffeine is in my system at any given time and how that correlates with my ability to stay focused.
 
 
-As finals season approaches, caffeine and energy drinks are unfortunately are big part of my life giving me the extra push to study and complete my work during this stressful, high-stakes time. When trying to figure out a project idea, I took a sip of my RedBull when I noticed a recurring pattern: I would drink an energy drink for a boost, but I couldn't predict when that boost would turn into a "crash." To solve this, I built a Python-based tracking system that treats caffeine consumption as a dynamic decay model using the half-life of caffeine.
+After some research, caffeine has a half-life of approximately 5 hours. Without a tracking system, it is easy to:
+- Over consume caffeine and experience jitters.
+- Under consume and still feel tired.
+- Fail to account for the metabolic decay of previous drinks.
 
-
+I made a Python-based tracking system that treats caffeine consumption as a dynamic decay model.
 
 I organized the project into a modular structure given to us as an example to use to ensure the code was easy to navigate and organized:
+
+- Data Logging - I tracked my caffeine intake in a Google Sheet for about a week and turned it into a CSV to be used as a dataframe
 
 - my_module/classes.py: Contains the CaffeineTracker class, which all the drink info, calculates my current caffeine level, allows for easy initialization of the data.
 
@@ -23,3 +29,6 @@ I organized the project into a modular structure given to us as an example to us
 - my_script.py: This is a program I can run at the end to quickly type in a new drink (like "Alani Nu, 200mg") and save it to my CSV and dataframe without having to go in and edit it.
 
 - Final_Project.ipynb: This is the main file where I use the classes and functions.
+
+Reflection:
+This project allowed me to use theoretical math equations I've been learning in other classes with practical data I collected myself. I ran into several "ParserErrors" and syntax issues and errors while working on this project, which I debugged using resources like geeksforgeeks.com, Python documentation, and AI assistance. I also ran a big "bug" with the time zones. Jupyter uses a different time setting (UTC), which messed up my time calculations and for a while I didnt understand what was wrong. I had to fix the code to use San Diego time (PST) so the math worked. Additonally, it was cool applying so many concepts from other classes into this project because I am also currently enrolled in DSC 10 where I work with babypandas, dataframes, and python and I had a lot of experience with plotting data from dataframes already. I was able to apply some of this knowledge into the final part of my project where I visualize my focus scores and caffeine consumption. Overall, this project helped me see how the stuff I learn in classes actually applies to my real life. I ended up building a really cool tool that I feel I can actually use to manage my energy and study better in the future!
