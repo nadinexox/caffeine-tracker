@@ -1,0 +1,25 @@
+============================================================
+
+Project: Caffeine Tracker - Final Project
+
+Course: COGS 18
+
+Date: March 12, 2026
+
+============================================================
+
+
+
+As finals season approaches, caffeine and energy drinks are unfortunately are big part of my life giving me the extra push to study and complete my work during this stressful, high-stakes time. When trying to figure out a project idea, I took a sip of my RedBull when I noticed a recurring pattern: I would drink an energy drink for a boost, but I couldn't predict when that boost would turn into a "crash." To solve this, I built a Python-based tracking system that treats caffeine consumption as a dynamic decay model using the half-life of caffeine.
+
+
+
+I organized the project into a modular structure given to us as an example to use to ensure the code was easy to navigate and organized:
+
+- my_module/classes.py: Contains the CaffeineTracker class, which all the drink info, calculates my current caffeine level, allows for easy initialization of the data.
+
+- my_module/functions.py: This contains a lot of the math functions in this project.
+
+- my_script.py: This is a program I can run at the end to quickly type in a new drink (like "Alani Nu, 200mg") and save it to my CSV and dataframe without having to go in and edit it.
+
+- Final_Project.ipynb: This is the main file where I use the classes and functions.
